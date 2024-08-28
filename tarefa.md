@@ -130,3 +130,49 @@ ORDER BY
 LIMIT 1
 ```
 ![maiorAcessos](https://github.com/user-attachments/assets/e7fc53bc-1007-4888-ac5a-1031a2cfc877)
+
+Com esses comandos, é possível identificar qual mês obteve a maior e a menor quantidade de acessos.
+```python
+%hive
+-- Mês com o maior número de acessos
+SELECT
+  MONTH(data_campaign) AS mes,
+  COUNT(*) AS total_acessos
+FROM
+  campaign
+GROUP BY
+  MONTH(data_campaign)
+ORDER BY
+  total_acessos DESC
+LIMIT 1
+```
+```python
+%hive
+-- Mês com o menor número de acessos
+SELECT
+  MONTH(data_campaign) AS mes,
+  COUNT(*) AS total_acessos
+FROM
+  campaign
+GROUP BY
+  MONTH(data_campaign)
+ORDER BY
+  total_acessos ASC
+LIMIT 1
+```
+
+## 4. Análise dos Resultados
+1. As campanhas que obtiveram maior quantidade de acessos são:
+- 3376: 4995 acessos;
+- 1852: 4994 acessos;
+- 7069: 4992 acessos;
+- 4386: 4990 acessos;
+- 4730: 4990 acessos;
+- 1359: 4998 acessos;
+- 5689: 4988 acessos;
+- 5126: 4988 acessos;
+- 5606: 4987 acessos;
+- 3208: 4982 acessos.
+
+2. O meses que obtiveram as maiores quantidades de acessos foram os meses 4 e 5.
+3. Devido as altas demandas exigidas, é mais recomendado que as campanhas sejam realizadas no mês de abriel e maio.
