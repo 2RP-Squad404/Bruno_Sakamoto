@@ -55,8 +55,8 @@ GROUP BY
 ## 1. Criação da Tabela consolidated_data
 ```python
 CREATE TABLE consolidated_data AS
-- Essa linha cria uma nova tabela chamada consolidated_data.
 ```
+- Essa linha cria uma nova tabela chamada consolidated_data.
 ## 2. Seleção e Agregação dos Dados
 ```python
 SELECT 
