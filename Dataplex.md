@@ -26,3 +26,10 @@ Isso inclui a capacidade de monitorar a consistência, completude e integridade 
 - Com a ajuda de machine learning, o Dataplex Lakes pode automatizar a classificação e a categorização de dados,
 permitindo uma gestão mais eficiente e com menos trabalho manual. A inteligência artificial pode ser usada para
 detectar padrões em dados, rotular automaticamente e aplicar políticas de conformidade, como a identificação de dados sensíveis.
+
+### Zones
+São agrupamentos lógicos de dados não estruturados, semiestruturados e estruturados e consiste em vários recursos, como buckets do Cloud Storage, conjuntos de dados e tabelas do BigQuery.
+
+- Zonas Brutas: As zonas brutas armazenam dados estruturados e semiestruturados, como arquivos CSV Arquivos JSON e dados não estruturados em qualquer formato de fontes externas. Isso é útil para preparar dados brutos antes de realizar qualquer transformação.
+- Zonas Selecionadas: As zonas selecionadas armazenam dados estruturados. Os dados podem ser armazenados em buckets do Cloud Storage ou conjuntos de dados do BigQuery.
+Os formatos compatíveis com os buckets do Cloud Storage incluem Parquet, Avro e ORC. Isso é útil para testar dados que precisam ser processados antes de serem usados ou para disponibilizar dados prontos para análise.
